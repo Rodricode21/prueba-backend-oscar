@@ -9,6 +9,15 @@ const createMovie = async (movie) => {
   return rows[0];
 };
 
+const getMovies = async () => {
+  // TODO: implement pagination
+  const query = 'SELECT * FROM movies.movie'
+  const { rows } = await pool.query(query);
+
+  return rows;
+}
+
 module.exports = {
   createMovie,
+  getMovies
 };

@@ -21,10 +21,10 @@ app.use(express.json());
 
 // Rutas para películas
 app.post("/api/movies", moviesController.createMovie);
+app.get("/api/movies", moviesController.getMovies);
 
 // Rutas para opciones
 app.get("/api/options", optionsController.getOptions);
-// app.get("/api/movies", moviesController.getMovies);
 
 app.listen(port, () => {
   console.log(`API iniciada en http://localhost:${port}`);
