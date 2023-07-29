@@ -10,7 +10,7 @@
 
 Be aware that the Dockerfile will create the schema and tables for you automatically. As well as a few records to have Fixtures data.
 
-Preferrably connect to the DB using a GUI or with psql, confirm the connection is achieved and run the fixtures.js script to load some initial data to the movie * option tables.
+Preferrably connect to the DB using a GUI or with psql, confirm the connection is achieved and that subsequent calls from the server will succeed.
 
 ## Docker build & run container
 
