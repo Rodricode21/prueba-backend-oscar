@@ -25,11 +25,10 @@ INSERT INTO movies.movie (name, budget, date, duration) VALUES
     ('Avengers', 6000, '9/16/2012', 4),
     ('Jurasic Park', 7000, '9/16/2001', 6),
     ('The Incredibles', 5000, '9/16/2004', 2),
-    ('Stuart Little', 2023, '5/20/2000', 1)
+    ('Stuart Little', 2023, '5/20/2000', 1);
     -- Add more movie records as needed
 
 -- Insert initial records into the "option" table
-INSERT INTO movies.option (name, value) VALUES
-    ('Option 1', 'Value 1'),
-    ('Option 2', 'Value 2')
-    -- Add more option records as needed
+INSERT INTO movies.option (name) VALUES
+    ('settings'),
+    ('profiles');
