@@ -10,7 +10,7 @@ const createMovie = async (movie) => {
 };
 
 const getMovies = async (req) => {
-  const { page, limit } = req.query || {} // avoid runtime error if query was undefined
+  const { page = 1, limit = 10 } = req.query || {} // avoid runtime error if query was undefined
   
   const pageNumber = parseInt(page, 10);
   const limitNumber = parseInt(limit, 10);
