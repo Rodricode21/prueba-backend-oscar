@@ -11,7 +11,7 @@ const createMovie = async (req, res) => {
 
 const getMovies = async (req, res) => {
   try {
-    const movies = await Movies.getMovies();
+    const movies = await Movies.getMovies(req);
     res.json(movies);
   } catch (error) {
     res.status(500).json({ error: 'Error while fetching the movies' });
