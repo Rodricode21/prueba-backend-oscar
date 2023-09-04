@@ -19,6 +19,7 @@ app.use(cors(corsOpts));
 
 app.use(express.json());
 
+
 // Rutas para películas
 app.post("/api/movies", moviesController.createMovie);
 app.get("/api/movies", moviesController.getMovies);
