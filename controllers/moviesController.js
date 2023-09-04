@@ -18,7 +18,19 @@ const getMovies = async (req, res) => {
   }
 }
 
+const testController = async (req, res) => {
+  try {
+    res.json({
+      message: 'This is a sample response',
+      timestamp: new Date(),
+    })
+  } catch (error) {
+    res.status(500).json({ error: 'Error while fetching the movies' });
+  }
+}
+
 module.exports = {
   createMovie,
-  getMovies
+  getMovies,
+  testController
 };

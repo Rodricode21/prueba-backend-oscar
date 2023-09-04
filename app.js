@@ -22,6 +22,7 @@ app.use(express.json());
 // Rutas para películas
 app.post("/api/movies", moviesController.createMovie);
 app.get("/api/movies", moviesController.getMovies);
+app.get('/api/test', moviesController.testController);
 
 // Rutas para opciones
 app.get("/api/options", optionsController.getOptions);
