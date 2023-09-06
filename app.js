@@ -28,6 +28,6 @@ app.get('/api/test', moviesController.testController);
 // Rutas para opciones
 app.get("/api/options", optionsController.getOptions);
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`API iniciada en http://localhost:${port}`);
 });
