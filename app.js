@@ -3,7 +3,8 @@ var cors = require("cors");
 const moviesController = require("./controllers/moviesController");
 const optionsController = require("./controllers/optionsController");
 const app = express();
-const port = 3010;
+const port = process.env.PORT || 3010;
+
 
 // load environment variables
 const dotenv = require("dotenv");
@@ -29,5 +30,5 @@ app.get('/api/test', moviesController.testController);
 app.get("/api/options", optionsController.getOptions);
 
 app.listen(port, '0.0.0.0', () => {
-  console.log(`API iniciada en http://localhost:${port}`);
+  console.log(`API iniciada en http://0.0.0.0:${port}`);
 });
